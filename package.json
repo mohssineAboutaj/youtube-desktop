@@ -4,7 +4,7 @@
   "description": "An Electron project ot watch youtube on your desktop",
   "main": "main.js",
   "scripts": {
-    "start": "electron start..."
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
