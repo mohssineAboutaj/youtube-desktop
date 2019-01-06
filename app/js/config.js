@@ -1,6 +1,17 @@
+// requirejs config file
+
+requirejs.config({
+	baseUrl: 'js',
+	paths: {
+		jquery: 'jquery.min',
+		bootstrap: 'bootstrap.min',
+		script: 'script'
+	}
+});
+
 requirejs([
-	'../node_modules/jquery/dist/jquery.min.js',
-	'../node_modules/popper.js/dist/popper.js',
-	'../node_modules/bootstrap/dist/js/bootstrap.min.js',
-	'js/script.js'
-])
+	'jquery.min',
+	'../popper',
+	'bootstrap.min',
+	'script'
+]);

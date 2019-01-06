@@ -3,18 +3,24 @@
   <head>
     <meta charset="UTF-8">
     <title>Youtube desktop - electron project</title>
-    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
   </head>
-  <body>
+  <body class="overflow-hidden">
+  
+	  <div class="form-group">
+			<div class="input-group mb-3">
+				<input type="search" placeholder="Type a youtube video/playlist url" autofocus="autofocus" class="form-control" />
+				<div class="input-group-prepend">
+					<div class="btn btn-primary">
+						<i class="fa fa-fw fa-search"></i>
+					</div>
+				</div>
+			</div>
+		</div>
 
-  <div class="form-group">
-    <input type="text" class="form-control">
-    <div class="btn btn-primary">button</div>
-  </div>
+  	<iframe width="700" height="450" src="https://www.youtube.com/embed/playlist?list=PLYxzS__5yYQmDD-0A0Jvy27lUnrGIsq9o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-  <iframe width="700" height="450" src="https://www.youtube.com/embed/eOsHPKpk9zE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-    <script data-main="js/config.js" src="js/require.js"></script>
+    <script data-main="js/config" src="js/require.js"></script>
 	</body>
 </html>
