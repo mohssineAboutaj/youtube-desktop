@@ -1,0 +1,31 @@
+{
+  "name": "youtube-desktop",
+  "version": "1.0.0",
+  "description": "An Electron project ot watch youtube on your desktop",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron start..."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohssineAboutaj/youtube-desktop.git"
+  },
+  "keywords": [
+    "Electron",
+    "ElectronJs",
+    "Youtube",
+    "Youtube Desktop"
+  ],
+  "author": "Mohssine Aboutaj",
+  "license": "MIT",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.6.3",
+    "bootstrap": "^4.2.1",
+    "electron": "^3.0.7"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.6",
+    "requirejs": "^2.3.6"
+  }
+}
