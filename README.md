@@ -8,6 +8,11 @@ An Electron project ot watch youtube on your desktop
 
 You can learn more about each of these components within the [Electron Docs](https://electronjs.org/docs/).
 
+## Demo
+
+#### Download links:
++ [windowds 32bit](https://drive.google.com/file/d/1Eib0ulT0Dc2ZezxakmSlarynwumcLxsy/view?usp=sharing)
+
 ## To Use
 
 To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
