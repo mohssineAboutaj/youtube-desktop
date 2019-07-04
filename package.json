@@ -4,7 +4,12 @@
   "description": "An Electron project ot watch youtube on your desktop",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --prune=true --out=release-builds",
+    "package-win-64": "electron-packager . --overwrite --platform=win32 --arch=x64 --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=Setup",
+    "package-win-32": "electron-packager . --overwrite --platform=win32 --arch=ia32 --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=Setup",
+    "package-linux-64": "electron-packager . --overwrite --platform=linux --arch=x64 --prune=true --out=release-builds",
+    "package-linux-32": "electron-packager . --overwrite --platform=linux --arch=ia32 --prune=true --out=release-builds"
   },
   "repository": {
     "type": "git",
@@ -19,11 +24,12 @@
   "author": "Mohssine Aboutaj",
   "license": "CC0 1.0",
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.6.3",
-    "bootstrap": "^4.2.1",
-    "electron": "^3.0.7"
+    "electron": "^3.0.7",
+    "electron-packager": "^14.0.0"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.6.3",
+    "bootstrap": "^4.2.1",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.6",
     "requirejs": "^2.3.6"
